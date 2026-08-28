@@ -1165,6 +1165,8 @@ if (!reduced && finePointer){
 const projects = {
   p1: {
     badge:'Research Project', title:'AI-Driven Multi-Agent System for Cloud Cost Forecasting & Optimization',
+    link:
+      'https://github.com/Ramya-66/AI-Driven-Multi-Agent-System-for-Cloud-Cost-Forecasting-and-Optimization-',
     tags:['AI','Multi-Agent Systems','AWS','AutoGen','Prophet'],
     overview:'An AI-powered multi-agent system designed to analyze and forecast AWS cloud costs across EC2, S3, RDS, Lambda and Data Transfer services.',
     problem:'Cloud spend across AWS services such as EC2, S3, RDS, Lambda and Data Transfer is difficult to predict and control with manual analysis, which often leads to budget overruns and reactive decision-making.',
@@ -1176,6 +1178,8 @@ const projects = {
   },
   p2: {
     badge:'Dashboard · Machine Learning', title:'Green Campus Dashboard',
+    link:
+      'https://green-campus-dashboard-python.streamlit.app/',
     tags:['Streamlit','Python','Machine Learning','Data Visualization'],
     overview:'An interactive dashboard for monitoring and analyzing campus sustainability metrics using historical datasets and simulated IoT data.',
     problem:'Campus sustainability data such as energy, water and occupancy is scattered and hard to interpret, which limits data-driven green initiatives.',
@@ -1187,6 +1191,8 @@ const projects = {
   },
   p3: {
     badge:'Sustainability · Web App', title:'Rainwater Harvesting Assessment',
+    link:
+      'https://rainwater-harvesting-assessment-app.onrender.com/',
     tags:['Flask','Python','HTML','CSS','Bootstrap','Sustainability'],
     overview:'A Flask-based application that estimates rainwater collection potential using rainfall and catchment parameters and provides data-driven sustainability insights.',
     problem:'Households and institutions lack simple tools to estimate how much rainwater they could harvest, making adoption of sustainable practices harder.',
@@ -1215,7 +1221,7 @@ function openProject(id){
     sectionHead('Technologies') +
     '<div class="flex flex-wrap gap-2">' + p.tech.map(t => '<span class="skill-pill !py-1.5 !px-3.5 !text-xs">' + t + '</span>').join('') + '</div>' +
     '<div class="mt-6 rounded-2xl bg-gradient-to-br from-blush-50 to-lav-100 border border-blush-200/60 p-5 flex gap-3.5 items-start"><i data-lucide="sparkles" class="w-5 h-5 text-blush-500 flex-none mt-0.5"></i><p class="text-sm text-ink/80 leading-relaxed"><strong class="font-semibold">Impact — </strong>' + p.impact + '</p></div>' +
-    '<div class="mt-6 flex flex-wrap gap-4"><a class="btn-primary" href="https://github.com/Ramya-66" target="_blank" rel="noopener"><i data-lucide="github" class="w-4 h-4"></i> View Project </a></div>';
+    '<div class="mt-6 flex flex-wrap gap-4"><a class="btn-primary" href="' + p.link + '" target="_blank" rel="noopener"><i data-lucide="external-link" class="w-4 h-4"></i> View Project</a></div>';
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
   if (window.lucide) lucide.createIcons();
