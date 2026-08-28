@@ -1187,6 +1187,7 @@ const projects = {
   },
   p3: {
     badge:'Sustainability · Web App', title:'Rainwater Harvesting Assessment',
+    live:'https://rainwater-harvesting-assessment-app.onrender.com'
     tags:['Flask','Python','HTML','CSS','Bootstrap','Sustainability'],
     overview:'A Flask-based application that estimates rainwater collection potential using rainfall and catchment parameters and provides data-driven sustainability insights.',
     problem:'Households and institutions lack simple tools to estimate how much rainwater they could harvest, making adoption of sustainable practices harder.',
@@ -1215,7 +1216,7 @@ function openProject(id){
     sectionHead('Technologies') +
     '<div class="flex flex-wrap gap-2">' + p.tech.map(t => '<span class="skill-pill !py-1.5 !px-3.5 !text-xs">' + t + '</span>').join('') + '</div>' +
     '<div class="mt-6 rounded-2xl bg-gradient-to-br from-blush-50 to-lav-100 border border-blush-200/60 p-5 flex gap-3.5 items-start"><i data-lucide="sparkles" class="w-5 h-5 text-blush-500 flex-none mt-0.5"></i><p class="text-sm text-ink/80 leading-relaxed"><strong class="font-semibold">Impact — </strong>' + p.impact + '</p></div>' +
-    '<div class="mt-6 flex flex-wrap gap-4"><a class="btn-primary" href="https://github.com/Ramya-66" target="_blank" rel="noopener"><i data-lucide="github" class="w-4 h-4"></i> View Project </a></div>';
+    '<div class="mt-6 flex flex-wrap gap-4"><a class="btn-primary" href="' + p.github + '" target="_blank" rel="noopener"><i data-lucide="arrow-up-right" class="w-4 h-4"></i> View Project </a></div>';
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
   if (window.lucide) lucide.createIcons();
